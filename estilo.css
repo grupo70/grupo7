@@ -1,0 +1,188 @@
+*{  margin: 0px; padding: 0px; box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{color: #fff; text-decoration: none;transition: 0.8s ;}
+a:hover{ color: rgb(240, 142, 77);transition: 0.8s ;}
+
+.padre{display: flex;flex-flow: column nowrap;}
+.margen-interno{
+    padding: 0 50px;
+}
+    .header{background:url(imagenes/covid-19-variants.jpg) ;background-position: center;
+        background-attachment:contain;background-size: cover;
+        display: flex;flex-flow: column nowrap;height: 650px;}
+        .menu{
+            background-color: rgba(0,0,0,.3);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+            
+        }
+            .logo{ flex: 1 1 auto; }
+            .nav{flex: 5 1 auto;}
+                .nav a{background-color: rgba(255, 123, 0, 0.03);transition: 0.8s ;
+                color: rgb(255, 255, 255); 
+                font-size: 11px; 
+                text-transform: uppercase; 
+                padding: 8px 10px;
+                letter-spacing: 40px;
+                width: 15px;/*no funciona cuando se tiene contenido solo para web responsive*/
+                }
+                .nav a:hover{color: rgb(179, 140, 140);transition: 0.8s ;}
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .social a{
+                       font-size: 25px; 
+                       color: rgb(231, 231, 231);
+                       padding: 0 5px;
+                }
+                .social a:hover{
+                    color: rgb(248, 127, 83);
+                }
+        .texto-principal{
+            height: 580px; 
+            display: flex;
+            align-items: center;
+        }
+            h1{ 
+                color: rgb(255, 255, 255); 
+                font-size: 40px; 
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 300;
+                text-align: center; 
+                line-height: 1.6;
+            }
+    .section{
+        background-color:rgb(29, 65, 31) ;
+        display: flex;
+    }
+        .articulos{
+            background-color:#000000;
+            flex: 2 1 auto; 
+            display: flex;
+            flex-flow: row wrap;}
+            .article{
+                flex: 1 1 40%;
+                color: #444;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0px;
+                flex: 1 1 45%;
+                background: #859b7c; 
+                padding-left: 10px;
+                border-radius: 15px;
+            }
+            .article img{
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            
+            h2{
+                font-size: 30px;
+                text-transform: uppercase;
+                padding: 0px 0 10px 0;
+                color: #fff;
+            }
+            .article a{
+                color: rgb(0, 0, 0);
+                font-size: 13px;
+                padding: 10x 10px;
+                background: #000;
+                margin: 10px 10px;
+            }
+            .article a:hover{
+                background: rgb(101, 109, 78);
+            }
+            .navegacion{
+                background-color: #080808;
+                flex: 1 1 100%;
+                padding: 10px;
+                margin: 10px;
+            }
+            .navegacion a{
+                color: orange;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .navegacion a:hover{
+                color: rgb(41, 99, 41);
+            }
+
+        .aside{
+            color: seashell;
+            background-color:#2e2d2d;
+            flex: 1 1 auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .aside img{
+            width: 250px;
+        }
+        h4{
+            background: sandybrown;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+            
+    .footer{
+        background-color:#000 ;
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        align-items: center;
+    }
+        .pie{ 
+            width: 300px;
+        }
+        .pie a{
+            color: #1a4734;
+            font-size: 30px;
+            text-transform: uppercase;
+            padding: 10 10px;
+            letter-spacing: 10px;
+        }
+        .pie a:hover{
+            color: rgb(164, 231, 209);
+            font-size: 40px;
+        }
+
+@media (max-width: 800px)
+ {
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .texto-principal{
+        height: 430px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    .aside img{
+        width: 100%;
+    }
+}       
+@media (max-width: 600px) {
+    .articulos{ flex-direction: column;}
+} 
+@media (max-width: 400px) {
+    .aside{flex-direction: column;}
+} 
